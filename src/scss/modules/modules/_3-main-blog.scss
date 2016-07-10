@@ -1,0 +1,78 @@
+.main-blog{
+	font-family: 'Proxima Nova';
+	.article-title{
+		font-size: 24px;
+		line-height: 22px;
+		margin-bottom: 5px;
+		a{
+			color: #d98d1b;
+			transition: 0.3s;
+			&:hover{
+				color: #94a14c;
+			}
+		}
+	}
+	.user-info{
+		margin-bottom: 3px;
+	}
+	.date{
+		font-size: 12px;
+		line-height: 12px;
+		font-style: italic;
+		color: #949494;
+		.fa{
+			margin-right: 5px;
+		}
+	}
+	.author{
+		@extend .date;
+		margin-left: 20px;
+	}
+	.post-text{
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		text-overflow: ellipsis;
+	}
+	.read-more{
+		font-weight: bold;
+		color: #d98d1b;
+		transition: 0.3s;
+		letter-spacing: 0.5px;
+		white-space: nowrap;
+		&:hover{
+			color: #94a14c;
+		}
+	}
+	.post-info{
+		position: relative;
+		overflow: hidden;
+	}
+	.fa-stack{
+		position: absolute;
+		right: 0;
+		top: 0;
+		.fa-stack-2x{
+			color: #d98d1b;
+		}
+		.fa-stack-1x{
+			color: white;
+			font-weight: bold;
+		}
+	}
+}
+
+.blog-post{
+	padding: 30px 0;
+	border-top: 1px solid #dadada;
+	&:first-child{
+		border-top: none;
+	}
+}
+.post-img-container{
+	width: 100%;
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
